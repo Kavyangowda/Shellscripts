@@ -8,3 +8,6 @@ then
 sum=`expr $sum + $i`
 echo $i
 fi
+done
+echo "sum of an array is $sum
+
