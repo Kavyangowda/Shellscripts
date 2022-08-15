@@ -1,0 +1,6 @@
+#!/bin/bash
+diskspace=`df -h . | awk -F " " 'NR==2{ print $5 }' | sed 's/%/ /g'`
+if [ $diskspace -ge 26 ]
+then
+echo "memory reached threshold value" | mail -s "memory utilaization" kavyangowda3041996@gmail.com
+fi            
