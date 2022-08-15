@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "enter the filename"
+read file
+while read line
+do
+salary=`echo "$line" | awk -F " " '{print $3}'`
+if [ $salary -gt 25000 ]
+then
+echo "$line" | awk -F " " '{print $1}'
+fi
+done < $file
