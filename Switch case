@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "enter the value"
+read num
+case $num in
+1) echo "wholenumber"
+;;
+3) echo "integer"
+;;
+*) echo "defaultvalue"
+;;
